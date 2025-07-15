@@ -1,5 +1,8 @@
 ---
+import Footer from "@components/Footer.astro";
 import Head from "@components/Head.astro";
+import Navbar from "@components/Navbar.astro";
+import "@styles/global.css";
 
 interface Props {
   title?: string;
@@ -10,7 +13,13 @@ const { title = "Astro" } = Astro.props;
 
 <html lang="en">
   <Head {title} />
-  <body>
-    <h1>Astro</h1>
+  <body class="font-vietnam">
+    <div class="flex flex-col h-screen justify-between">
+      <Navbar />
+      <main class="mx-auto max-w-3xl w-[90%] py-14 mb-auto">
+        <slot />
+      </main>
+      <Footer />
+    </div>
   </body>
 </html>

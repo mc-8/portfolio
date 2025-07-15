@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mc-8.github.io/sitemap-index.xml

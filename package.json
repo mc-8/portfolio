@@ -10,7 +10,15 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.4.1",
+    "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.11.1",
-    "astro-capo": "^0.0.1"
+    "astro-capo": "^0.0.1",
+    "astro-icon": "^1.1.5",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@iconify-json/tabler": "^1.2.19",
+    "lefthook": "^1.12.2"
   }
 }
