@@ -1,17 +1,17 @@
 ---
-import About from "@components/content/About.astro";
-import Repo from "@components/content/Repo.astro";
-import Section from "@components/Section.astro";
-import Layout from "@layouts/Layout.astro";
-import { getMostRecentRepositories } from "@utils/github";
+import About from '@components/content/About.astro'
+import Repo from '@components/content/Repo.astro'
+import Section from '@components/Section.astro'
+import Layout from '@layouts/Layout.astro'
+import { getMostRecentRepositories } from '@utils/github'
 
-const repos = await getMostRecentRepositories();
+const repos = await getMostRecentRepositories()
 ---
 
 <Layout>
   <About />
   <Section title="Recent Repositories">
-    <ul class="grid grid-cols-2 gap-4">
+    <ul class="grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
       {repos.map((repo) => <Repo {...repo} />)}
     </ul>
   </Section>

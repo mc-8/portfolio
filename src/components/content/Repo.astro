@@ -1,22 +1,19 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Icon } from 'astro-icon/components'
 
 interface Props {
-  name: string;
-  desc: string | null;
-  stars?: number;
-  url: string;
+  name: string
+  desc: string | null
+  stars?: number
+  url: string
 }
 
-const { name, desc, stars, url } = Astro.props;
+const { name, desc, stars, url } = Astro.props
 ---
 
-<a
-  href={url}
-  class="border border-neutral-700 rounded-md p-4 duration-300 hover:scale-105"
->
+<a href={url} class="border-2 border-neutral-700 rounded-md p-4 space-y-1">
   <div class="flex items-center justify-between">
-    <h4 class="font-semibold">{name}</h4>
+    <h4 class="font-semibold text-xl">{name}</h4>
     <span class="flex items-center gap-2">
       {stars}
       <Icon name="tabler:star-filled" class="rotate-12" />

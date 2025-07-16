@@ -1,19 +1,19 @@
 ---
-import Footer from "@components/Footer.astro";
-import Head from "@components/Head.astro";
-import Navbar from "@components/Navbar.astro";
-import "@styles/global.css";
+import Footer from '@components/Footer.astro'
+import Head from '@components/Head.astro'
+import Navbar from '@components/Navbar.astro'
+import '@styles/global.css'
 
 interface Props {
-  title?: string;
+  title?: string
 }
 
-const { title = "mc-8" } = Astro.props;
+const { title = 'mc-8' } = Astro.props
 ---
 
 <html lang="en" class="scheme-dark">
   <Head {title} />
-  <body class="font-vietnam text-gray-300">
+  <body class="text-gray-300">
     <div class="flex flex-col h-screen justify-between">
       <Navbar />
       <main class="mx-auto max-w-3xl w-[90%] py-14 mb-auto">
