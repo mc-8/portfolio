@@ -11,10 +11,10 @@
     "format": "prettier . --write"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.4.1",
+    "@astrojs/sitemap": "^3.5.1",
     "@octokit/core": "^7.0.3",
     "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.11.1",
+    "astro": "^5.13.3",
     "astro-capo": "^0.0.1",
     "astro-icon": "^1.1.5",
     "tailwindcss": "^4.1.11"
